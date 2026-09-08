@@ -1,0 +1,13 @@
+h1 {
+    background-color: lightblue;
+}
+
+ul > li#colors:nth-child(1) {
+   color:red 
+}
+ul > li#colors:nth-child(3) {
+   color:green 
+}
+ul > li#colors:nth-child(4) {
+   color:blue 
+}
