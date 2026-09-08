@@ -46,20 +46,24 @@ li:nth-child(3) {
 
 /* Sub-list */
  ul ul li:nth-child(1) {
-  color:violet;
+  color:darkviolet;
   background-color:lightgray;
+  border-radius: 12px; 
 }
 
 /* Inner sub-list */
  ul ul ul li:nth-child(1) {
   color:darkorange;
   background-color:beige;
+  border-radius: 12px; 
+  font-size:small;
 }
 
 /* Second violet item in sublist */
 ul ul li:nth-child(3) {
-  color:violet;
+  color:darkviolet;
   background-color:lightgray;
+  border-radius: 12px; 
 }
 
 /* Final main list item */
