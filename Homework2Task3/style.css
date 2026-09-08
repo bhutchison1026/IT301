@@ -1,0 +1,41 @@
+* {
+   font-family: sans-serif;
+}
+
+h2 {
+   color: grey;
+   font-style: italic;
+}
+
+h3 {
+   font-size:medium;
+   margin-left: 50px;
+}
+
+.gray-highlight {
+   background: lightgray;
+   color: red;
+   text-decoration: underline overline solid black;
+}
+
+fieldset {
+   background-color: lightgray;
+   color: navy;
+   font-style: bold;
+   outline:double black;
+   border-radius: 3px;
+   margin-right:200px
+}
+
+.strikethrough {
+   text-decoration: line-through;
+}
+
+.update {
+   font-size: small;
+   font-style: italic;
+}
+
+.indent {
+   margin-left: 10px;
+}
