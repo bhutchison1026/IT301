@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Styling with CSS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+  <header>
+    <h1>styling with <span>css</span></h1>
+    <p>In <span>CSS</span>, selectors are patterns used to select the element(s) you want to style.</p>
+  </header>
+
+ <main>
+
+    <section>
+      <h2>Selecting Specific Elements with <span>CSS</span></h2>
+      <p>
+        To select multiple elements, we use commas. Example: <code>h1, h2, p</code><br>
+        To select a specific child element in a list, we use <code>:nth-child()</code>. Example: <code>li:nth-child(2)</code><br>
+        To select a specific child element within a parent, we use <code>element element:nth-child(n)</code>. Example: <code>ul ul li:nth-child(1)</code>
+
+      </p>
+    </section>
+    
+    <section>
+        <h2>Let's change the text and background:</h2>
+        <ul>
+          <li>This item is styled in royal blue.</li>
+          <li>This item is styled in forest green.</li>
+          <li>This item is styled in crimson red.</li>
+
+          <ul>
+            <li>This sub-item is violet with a light gray background.</li>
+            <ul>
+              <li>This inner item is dark orange with beige background.</li>
+            </ul>
+            <li>Back to violet with light gray background.</li>
+          </ul>
+
+          <li>Back to royal blue for consistency.</li>
+        </ul>
+      </section>
+  
+  </main>
+
+  <footer>
+    <p>&#169; Sep 23 2025/ Nareman Hamdan</p>
+  </footer>
+
+</body>
+</html>
+
