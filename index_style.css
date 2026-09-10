@@ -1,0 +1,31 @@
+
+.montserrat-montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 10px;
+  font-style: normal;
+}
+
+
+body {
+    background-color: skyblue;
+    font-family: Montserrat;
+    color: darkslategrey
+}
+
+p {
+    padding: 10px;
+    font-size:large;
+    text-align: center;
+}
+
+h2 {
+    font-style: italic;
+}
+
+section {
+    border: 2px solid navy;
+    box-shadow: 5px 10px darkslateblue; 
+    border-radius: 3px;
+    padding: 20px;
+}
