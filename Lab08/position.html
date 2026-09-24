@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>My Store</title>
+
+  <script src="https://kit.fontawesome.com/0c5bdac1be.js"
+          crossorigin="anonymous"></script>
+
+  <style>
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f8fc;
+      color: #111;
+    }
+
+
+    /* =========================
+       HEADER
+       ========================= */
+
+    header {
+
+      /* ADD POSITIONING STYLES HERE */
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      z-index: 1;
+      background: royalblue;
+      color: white;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      padding: 12px 20px;
+    }
+
+    header .mystore-nav {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      font-weight: 700;
+      font-size: 18px;
+    }
+
+    header .user-nav {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+
+    /* =========================
+       SIDE BUTTONS
+       ========================= */
+
+    .button {
+
+      /* ADD POSITIONING STYLES HERE */
+      position: fixed;
+      
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      width: 56px;
+
+      color: white;
+      cursor: pointer;
+      text-align: center;
+      font-weight: 700;
+    }
+
+
+    .find-your-phone {
+
+      /* ADD POSITIONING STYLES HERE */
+      left: 0px;
+      top: 35%;
+
+
+      background: #1e73d9;
+      height: 200px;
+
+      border-radius: 0 8px 8px 0;
+
+      writing-mode: sideways-lr;
+    }
+
+
+    .feedback {
+
+      /* ADD POSITIONING STYLES HERE */
+      right: 0px;
+      top: 40%;
+      background: #1fa74d;
+      height: 140px;
+
+      border-radius: 8px 0 0 8px;
+
+      writing-mode: sideways-lr;
+    }
+
+
+    /* =========================
+       MAIN AREA
+       ========================= */
+
+    .great-grandpappy {
+      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      min-height: 100vh;
+      width: 100%;
+
+      background: #eef6f5;
+    }
+
+
+    /* =========================
+       PRODUCT CARD
+       ========================= */
+
+    .card {
+
+      /* ADD POSITIONING STYLES HERE */
+      position:relative;
+      
+      width: 300px;
+      height: 375px;
+      margin: 100px;
+      background: white;
+
+      border-radius: 10px;
+
+      padding: 32px 28px;
+
+      box-shadow:
+        0 6px 18px rgba(0, 0, 0, 0.12);
+    }
+
+
+    .card h3 {
+      padding-right: 90px;
+      margin-bottom: 20px;
+
+      font-size: 18px;
+    }
+
+
+    .card p {
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+
+    /* =========================
+       BADGE
+       ========================= */
+
+    .badge {
+
+      /* ADD POSITIONING STYLES HERE */
+      position:absolute;
+      top: 10px;
+      right:10px;
+
+      background: #ffd54a;
+      color: #112;
+
+      padding: 6px 10px;
+
+      border-radius: 10px;
+
+      font-size: 13px;
+      font-weight: 800;
+
+      box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.12);
+    }
+
+
+    /* =========================
+       PRICE
+       ========================= */
+
+    .pricetag {
+
+      /* ADD POSITIONING STYLES HERE */
+      position: absolute;
+      bottom: 5px;
+      left: 50%;
+      transform: translate(-50%);
+
+      color: royalblue;
+
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+
+  </style>
+</head>
+
+
+<body>
+
+
+  <header>
+
+    <div class="mystore-nav">
+      <i class="fa-solid fa-shop"></i>
+      My Store
+    </div>
+
+    <div class="user-nav">
+      <i class="fa-solid fa-circle-user"></i>
+      Account
+
+      <i class="fa-solid fa-cart-shopping"></i>
+      Cart
+    </div>
+
+  </header>
+
+
+  <div class="button find-your-phone">
+    Find Your Phone
+  </div>
+
+
+  <div class="button feedback">
+    Feedback
+  </div>
+
+
+  <div class="great-grandpappy">
+
+    <div class="card">
+
+      <h3>
+
+        Wireless Headphones
+
+        <span class="badge">
+          <i class="fa-solid fa-star"></i>
+          Best Seller
+        </span>
+
+      </h3>
+
+
+      <p>
+        Noise-cancelling over-ear headphones
+        with 30 hours of battery life and
+        rich sound quality.
+      </p>
+
+
+      <div class="pricetag">
+        $99
+      </div>
+
+    </div>
+
+  </div>
+
+
+</body>
+</html>
