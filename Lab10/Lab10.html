@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+</head>
+<body>
+    
+    <script>
+        var valid = false;
+        var total = Number(prompt("Enter the total restuarant bill amount: "));
+        do {
+            
+            if (total == 0) {
+                total = Number(prompt("Input invalid, please enter a non-zero restaurant bill total."));
+                valid = false;
+            } else if (total < 0) {
+                total = Number(prompt("Input invalid, please enter a positive restaurant bill total."));
+                valid = false;
+            } else if (isNaN(total)) {
+                total = Number(prompt("Input invalid, please enter a valid number for the bill total."));
+                valid = false;
+            } else {
+                valid = true;
+            }
+        } while (valid == false);
+        total = total.toFixed(2)
+        var tip = (total * 0.1).toFixed(2);
+        console.log(`For a bill of $${total}, the tip should be $${tip}.`)
+        document.write(`For a bill of $${total}, the tip should be $${tip}.`)
+    </script>
+</body>
+</html>
