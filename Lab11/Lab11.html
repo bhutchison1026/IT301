@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 11</title>
+    <style>
+        #box {
+            background-color: blue;
+            color: white;
+            width:fit-content;
+            font-size: xx-large;
+            margin: 20px;
+            padding: 25px;
+            cursor: pointer;
+        }
+        #bckgrnd {
+            display: flex;
+            width: 75vw;
+            height: 75vh;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <p id='box'>Click me! 😊</p>
+    <div id='bckgrnd'></div>
+    <script>
+        const box = document.getElementById('box');
+        const bckgrnd = document.getElementById('bckgrnd') 
+        function mouseOverEvent(event){
+            box.style.backgroundColor = 'yellow';
+            box.style.color = 'black'
+            box.textContent = 'Do not click! 😠';
+        }
+        function mouseOutEvent(event){
+            box.style.backgroundColor = 'lightgreen';
+            box.style.color = 'black'
+            box.textContent = 'Phew! 😌';
+        }
+        function clickEvent(event){
+            box.style.backgroundColor = 'red';
+            box.style.color = 'black'
+            box.textContent = 'Ouch! 🤕';
+        }
+        function dblclickEvent(event){
+            box.style.backgroundColor = 'pink';
+            box.style.color = 'black'
+            box.textContent = 'Double trouble! 🤩';
+        }
+        function mouseMoveEvent(event){
+            box.style.backgroundColor = 'lightblue';
+            box.textContent = 'I see you! 👀';
+        }
+        box.addEventListener('mouseover', mouseOverEvent)
+        box.addEventListener('mouseout', mouseOutEvent)
+        box.addEventListener('click', clickEvent)
+        box.addEventListener('dblclick', dblclickEvent)
+        bckgrnd.addEventListener('mousemove', mouseMoveEvent)
+        </script>
+    </div>
+</body>
+</html>
