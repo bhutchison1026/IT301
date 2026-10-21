@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <form>
+        <label>What's your name?</label>
+        <input type="text" id="name">
+        <br>
+        <button type="button" id="bttn1">Submit</button>
+        <p id="result1"></p>
+
+        <label>What's the value of a?</label>
+        <input type="number" id="a">
+        <br>
+        <label>What's the value of b?</label>
+        <input type="number" id="b">
+        <br>
+
+        <p>Select your operation:</p>
+        <input type="radio" name="operation" value="add"> Addition <br>
+        <input type="radio" name="operation" value="sub"> Subtraction <br>
+        <input type="radio" name="operation" value="mult"> Multiplication <br>
+        <input type="radio" name="operation" value="div"> Division <br>
+        <button type="button" id="select">Select</button>
+        <br><br>
+        <button type="button" id="bttn2">Calculate!</button>
+        <p id="result2"></p>
+        <br><br>
+        <button type="button" id="reset">Reset</button>
+
+    </form>
+    <script>
+        const name = document.getElementById("name");
+        const result1 = document.getElementById("result1");
+        const bttn1 = document.getElementById("bttn1");
+        bttn1.addEventListener('click', function(){
+            result1.textContent = ("Hello " + name.value + "!");
+        });
+
+        const a = document.getElementById("a");
+        const b = document.getElementById("b");
+        let operation = null;
+        document.getElementById('select').addEventListener('click', function(){
+            operation = document.querySelector('[name = operation]:checked');
+        });
+
+        const result2 = document.getElementById("result2");
+        const bttn2 = document.getElementById("bttn2");
+        bttn2.addEventListener('click', function(){
+            if (a.value=="") {
+                result2.textContent = "Please enter a number.";
+            } else if (b.value=="") {
+                result2.textContent = "Please enter a number.";
+            } else {
+                if (operation.value == "add") {
+                    result2.textContent = ("a + b = " + (Number(a.value) + Number(b.value)));
+                } else if (operation.value == "sub"){
+                    result2.textContent = ("a - b = " + (Number(a.value) - Number(b.value)));
+                } else if (operation.value == "mult"){
+                    result2.textContent = ("a * b = " + (Number(a.value) * Number(b.value)));
+                } else {
+                    result2.textContent = ("a / b = " + (Number(a.value) / Number(b.value)));
+                }
+            };
+        });
+
+        const reset = document.getElementById("reset");
+        reset.addEventListener('click', function(){
+            location.reload()
+        });
+    </script>
+</body>
+</html>
