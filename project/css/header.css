@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+    font-family: Arvo, Georgia, serif;
+}
+
+body {
+    margin: 0px;
+}
+
+a {
+    color: white;
+}
+
+header {
+    display: flex;
+    background-color:#450084;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 10px;
+    flex-direction: column;
+}
+    
+h1 {
+    color: #fff;
+    font-family: Arvo;
+    font-size: 3em;
+    align-content: center;
+    text-align: center;
+}
+
+.navigation>nav>ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.navigation>nav>ul>li {
+    display: flex;
+    color: #fff;
+    font-size: 2em;  
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+}
+
+.title>img {
+    margin: 20px;
+    width: 45vw;
+}
+
+/* CSS Media Queries used on heading for each screen!*/
+@media screen and (max-width: 700px) {
+    .navigation>nav>ul {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0px;
+    }
+
+    .title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .title>img {
+        width: 90vw;
+    }
+    header {
+        padding: 30px 0px;
+    }
+
+}

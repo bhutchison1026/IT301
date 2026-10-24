@@ -1,0 +1,33 @@
+form {
+    padding: 0px 20px 20px 20px;
+}
+.alcohol > ul > li > ul > li:last-of-type(){
+    padding-bottom: 50px;
+}
+section {
+    padding: 20px;
+}
+
+main {
+    display: flex;
+    width: 99%;
+}
+
+li {
+    font-size: 15px;
+}
+
+h2 {
+    text-align: center;
+}
+label {
+    font-size: 15px;
+}
+.when, .alcohol, .checklist {
+    margin: 10px;
+    border: 3px black solid;
+    border-radius: 5px;
+}
+.when{
+    margin-left: 20px;
+}

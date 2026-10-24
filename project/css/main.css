@@ -1,0 +1,44 @@
+p {
+    margin: 0px 15px;   
+}
+
+h2 {
+    margin: 15px;
+}
+
+.firstBlock {
+    display: flex;
+}
+
+.firstBlock > p {
+    width: 40vw;
+}
+
+img {
+    margin: 15px;
+    border-radius: 5px;
+    float: right;
+    width: 50vw;
+    flex-grow: 0;
+}
+
+@media screen and (max-width: 700px) {
+    .firstBlock {
+        flex-direction: column;
+        align-items: center;
+    }
+    .firstBlock > img {
+        width: 90vw;
+    }
+    .firstBlock > p {
+        width: 90vw;
+        text-align: center;
+    }
+    h2 {
+        text-align: center;
+    }
+    body {
+        margin: -8px;
+    }
+
+}

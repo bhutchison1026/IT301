@@ -1,0 +1,16 @@
+BRAINSTORM
+
+homepage:
+    navigation
+    explanation of the page/pages
+
+Page Ideas:
+- Order form for bulletin boards
+    - Bulletin board options
+- Making a CR (and/or administrative tasks)
+- Directory (split into different areas/buildings)
+- Programs/program Ideas
+- Navigating Starrez
+   - tutorials, video tutorials, check canvas
+- Running calender
+   - deadlines, advise timelines, when to get your stuff done throughout the year

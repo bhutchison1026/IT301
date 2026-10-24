@@ -1,0 +1,46 @@
+main > div{
+    display: flex;
+    justify-content: center;
+}
+
+td>a {
+    color: black;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px 0px;
+    margin-bottom: 120px;
+}
+
+table, th, td {
+    border: 2px black solid;
+    padding: 5px;
+}
+
+th {
+    padding: 10px;
+    background-color: #AD9C65;
+}
+
+tr:nth-child(odd){
+    background-color: #DACCE6;
+}
+
+tr:nth-child(even){
+    background-color: #B599CE;
+}
+
+main > p {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #cff222;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+}
