@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab14</title>
+    <style>
+
+    </style>
+</head>
+<body id="body">
+
+    <script>
+        let div = document.createElement("div");
+        let img = document.createElement("img");
+        let pName = document.createElement("p");
+        let pEmail = document.createElement("p");
+        let pPhone = document.createElement("p");
+        let form = document.createElement('form');
+        let bttn = document.createElement("button");
+        
+        document.body.appendChild(div);
+
+        const getResults = async() => {
+            try{
+                let results = await fetch ("https://randomuser.me/api/");
+                results = await results.json();
+                pic = (results.results[0].picture["large"]);
+                img.src = pic;
+                img.alt = "photo of user";
+                div.appendChild(img);
+                
+                username = (results.results[0].name["first"] + " " + results.results[0].name["last"]);
+                pName.textContent = username;
+                div.appendChild(pName);
+                
+                email = (results.results[0].email);
+                pEmail.textContent = email;
+                div.appendChild(pEmail);
+                
+                phone = (results.results[0].phone);
+                pPhone.textContent = phone;
+                div.appendChild(pPhone);
+
+                bttn.textContent = "Generate Profile";
+                form.appendChild(bttn);
+                
+                document.body.appendChild(form);
+                bttn.style.margin = "20px";
+                bttn.style.fontSize = "30px";
+                document.body.style.display = "flex";
+                document.body.style.flexDirection = "column";
+                document.body.style.alignItems = "center";
+
+                div.style.display = "flex"
+                div.style.flexDirection = "column"
+                div.style.width = "300px";
+                div.style.backgroundColor = 'lightPink';
+                img.style.margin = "20px";
+                pName.style.textAlign = "center"
+                pEmail.style.textAlign = "center"
+                pPhone.style.textAlign = "center"
+            } catch{(reason)=>console.log(reason);}
+        }
+        getResults();
+        
+
+        /* const getImg = async()=>{
+            try{
+                let imgAdd = await fetch ('https://api.thecatapi.com/v1/images/search');
+                imgAdd = await imgAdd.json();
+                console.log(imgAdd[0].url);
+
+                img.src = imgAdd[0].url;
+                img.alt = "random image of a cat";
+                img.style.width = '300px';
+                document.body.appendChild(img);
+            } catch{(reason)=>console.log(reason);}
+        } */
+    </script>
+</body>
+</html>
